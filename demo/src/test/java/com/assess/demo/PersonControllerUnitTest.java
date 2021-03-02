@@ -13,9 +13,8 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 import java.util.ArrayList;
 import java.util.List;
 
-import org.junit.Before;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.junit.runner.RunWith;
 import org.mockito.Mockito;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
@@ -71,7 +70,7 @@ public class PersonControllerUnitTest {
 	
 
 	
-	@Before
+	@BeforeEach
 	public void setup() {
 		mockMvc = MockMvcBuilders.webAppContextSetup(context).apply(springSecurity()).build();
 		
