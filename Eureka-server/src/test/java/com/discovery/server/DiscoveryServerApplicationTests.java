@@ -1,4 +1,4 @@
-package io.javabrains.discoveryserver;
+package com.discovery.server;
 
 
 import org.junit.jupiter.api.Test;
