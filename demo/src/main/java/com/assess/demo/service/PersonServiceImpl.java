@@ -56,10 +56,10 @@ public class PersonServiceImpl implements  PersonService {
         if(person.isPresent())
         {
         	Person newEntity = person.get();
-        	newEntity.setFirstName(entity.getFirstName());
-        	newEntity.setLastName(entity.getLastName());
+        	newEntity.setFirst_name(entity.getFirst_name());
+        	newEntity.setLast_name(entity.getLast_name());
             newEntity.setAge(entity.getAge());
-            newEntity.setFavouriteColour(entity.getFavouriteColour());
+            newEntity.setFavourite_colour(entity.getFavourite_colour());
  
             newEntity = repository.save(newEntity);
              

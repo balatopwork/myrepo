@@ -16,82 +16,105 @@ public class Person {
     private Long id;
 
     @Column(name="first_name")
-    private String firstName;
+    private String first_name;
     
     @Column(name="last_name")
-    private String lastName;
+    private String last_name;
 
 	@Column(name="age")
     private Integer age;
 
 	@Column(name="favourite_colour")
-    private String favouriteColour;
+    private String favourite_colour;
 	
 	public Person() {
 		super();
 	}
 
-	public Person(String firstName, String lastName, Integer age, String favouriteColour) {
+
+    public Person(String first_name, String last_name, Integer age, String favourite_colour) {
 		super();
-		this.firstName = firstName;
-		this.lastName = lastName;
+		this.first_name = first_name;
+		this.last_name = last_name;
 		this.age = age;
-		this.favouriteColour = favouriteColour;
+		this.favourite_colour = favourite_colour;
 	}
-	
-	public Person(Long id, String firstName, String lastName, Integer age, String favouriteColour) {
+
+
+	public Person(Long id, String first_name, String last_name, Integer age, String favourite_colour) {
 		super();
 		this.id = id;
-		this.firstName = firstName;
-		this.lastName = lastName;
+		this.first_name = first_name;
+		this.last_name = last_name;
 		this.age = age;
-		this.favouriteColour = favouriteColour;
+		this.favourite_colour = favourite_colour;
 	}
-    
-    public Long getId() {
+
+	public Long getId() {
 		return id;
 	}
+
+
 
 	public void setId(Long id) {
 		this.id = id;
 	}
 
-	public String getFirstName() {
-		return firstName;
+
+
+	public String getFirst_name() {
+		return first_name;
 	}
 
-	public void setFirstName(String firstName) {
-		this.firstName = firstName;
+
+
+	public void setFirst_name(String first_name) {
+		this.first_name = first_name;
 	}
 
-	public String getLastName() {
-		return lastName;
+
+
+	public String getLast_name() {
+		return last_name;
 	}
 
-	public void setLastName(String lastName) {
-		this.lastName = lastName;
+
+
+	public void setLast_name(String last_name) {
+		this.last_name = last_name;
 	}
-	
-    public Integer getAge() {
+
+
+
+	public Integer getAge() {
 		return age;
 	}
+
+
 
 	public void setAge(Integer age) {
 		this.age = age;
 	}
-	
 
-	public String getFavouriteColour() {
-		return favouriteColour;
+
+
+	public String getFavourite_colour() {
+		return favourite_colour;
 	}
 
-	public void setFavouriteColour(String favouriteColour) {
-		this.favouriteColour = favouriteColour;
+
+
+	public void setFavourite_colour(String favourite_colour) {
+		this.favourite_colour = favourite_colour;
 	}
+
+
 
 	@Override
-    public String toString() {
-        return "EmployeeEntity [id=" + id + ", firstName=" + firstName + 
-                ", lastName=" + lastName + ", email=" + favouriteColour   + "]";
-    }  
+	public String toString() {
+		return "Person [id=" + id + ", first_name=" + first_name + ", last_name=" + last_name + ", age=" + age
+				+ ", favourite_colour=" + favourite_colour + "]";
+	}
+
+  
 }
